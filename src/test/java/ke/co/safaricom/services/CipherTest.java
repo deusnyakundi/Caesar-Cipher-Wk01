@@ -17,12 +17,12 @@ class CipherTest {
         System.out.println(msg.toCharArray());
         System.out.println(msg.toCharArray().length);
         System.out.println(msg.indexOf('b'));
-        System.out.println(msg.toLowerCase().indexOf('b'));
+        System.out.println(msg.toLowerCase().indexOf('b')); //testing conversion of case
         System.out.println(msg.indexOf('b'));
-        System.out.println(msg.toUpperCase().indexOf('C'));
+        System.out.println(msg.toUpperCase().indexOf('C')); // testing if the characters already in uppercase remain so after running toUpperCase
     }
     @Test
-    public void testMod(){                               //testing out of range problem and solution
+    public void testMod(){                               //testing out of range problem and solution using modulus
          String testmsg = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
          int shift = 2;
          System.out.println(testmsg.toUpperCase().indexOf('Z'));

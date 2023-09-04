@@ -27,16 +27,22 @@ public class Cipher {
     }
 
     public String encrypt(){
-        char[] message = this.getMessage().toUpperCase().toCharArray();
+        char[] message = this.getMessage().toUpperCase().toCharArray(); //Converting all inputs to upper case regardless of the user input
         String output = "";
 
         for( int i=0; i < message.length; i++){
             char c = message[i];
-            int charPosition = this.alphabets.indexOf(c);
-            int newPosition = (charPosition + this.getKey())%26;
-            char newChar = this.alphabets.charAt(newPosition);
 
-            output = output + newChar;
+            if (Character.isLetter(c)) {
+                int charPosition = this.alphabets.indexOf(c);
+                int newPosition = (charPosition + this.getKey()) % 26;
+                char newChar = this.alphabets.charAt(newPosition);
+
+                output = output + newChar;
+
+            } else {
+                output = output + c;
+            }
 
 
         }
