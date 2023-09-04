@@ -33,7 +33,7 @@ public class Cipher {
         for( int i=0; i < message.length; i++){
             char c = message[i];
             int charPosition = this.alphabets.indexOf(c);
-            int newPosition = charPosition + this.getKey();
+            int newPosition = (charPosition + this.getKey())%26;
             char newChar = this.alphabets.charAt(newPosition);
 
             output = output + newChar;

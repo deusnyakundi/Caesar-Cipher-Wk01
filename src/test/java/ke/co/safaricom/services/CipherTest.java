@@ -1,8 +1,11 @@
 package ke.co.safaricom.services;
 
 import org.junit.jupiter.api.Test;
+import java.util.Scanner;
+
 
 import static org.junit.jupiter.api.Assertions.*;
+
 
 class CipherTest {
 
@@ -17,6 +20,20 @@ class CipherTest {
         System.out.println(msg.toLowerCase().indexOf('b'));
         System.out.println(msg.indexOf('b'));
         System.out.println(msg.toUpperCase().indexOf('C'));
+    }
+    @Test
+    public void testMod(){                               //testing out of range problem and solution
+         String testmsg = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+         int shift = 2;
+         System.out.println(testmsg.toUpperCase().indexOf('Z'));
+         int newPos = (testmsg.toUpperCase().indexOf('Z')) + shift;
+         System.out.println(newPos);
+
+        int newPos2 = ((testmsg.toUpperCase().indexOf('Z')) + shift)%26;
+        System.out.println(newPos2);
+
+
+
     }
 
     @Test
