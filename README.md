@@ -3,7 +3,7 @@
 The Caesar cipher is a simple encryption technique that was used by Julius Caesar to send secret messages to his allies
 and generals. It works by shifting the letters in the plaintext message by a certain number of positions, known as the “shift” or “key”.
 
-This application implements the technique on command prompt to take user input and encrypt the message with 
+This application implements the technique on command prompt to take user input and encrypt  or decrypt the message with 
 a private key.
 
 
