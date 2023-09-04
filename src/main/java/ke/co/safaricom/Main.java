@@ -11,8 +11,9 @@ public class Main {
 
         while(true){
 
+
             System.out.println("Please enter your message");
-            String message = scanner.next();
+            String message = scanner.nextLine();  // Using next() prevents app from accepting spaces as part of the input and breaks out to skip the immediate next input
 
             System.out.print("Enter the process to execute (e/d):");
             String process = scanner.next();
@@ -27,7 +28,7 @@ public class Main {
 
             if(process.startsWith("e")){
                 output = cipher.encrypt();
-            } else {
+            } else if (process.startsWith("d")){
                output =  cipher.decrypt();
             }
 
@@ -35,7 +36,6 @@ public class Main {
 
             System.out.print("Would you like to continue? (yes or no):");
             String nextStep = scanner.next();
-
 
             if(!nextStep.startsWith("y")) {
                 System.out.print("Thank you and goodbye!");
