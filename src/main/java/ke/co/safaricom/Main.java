@@ -28,7 +28,7 @@ public class Main {
 
             if(process.startsWith("e")){
                 output = cipher.encrypt();
-            } else if (process.startsWith("d")){
+            } else if(process.startsWith("d")){
                output =  cipher.decrypt();
             }
 
