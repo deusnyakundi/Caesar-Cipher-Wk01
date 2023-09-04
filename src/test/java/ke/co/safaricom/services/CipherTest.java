@@ -11,7 +11,7 @@ class CipherTest {
 
     @Test
     public void findIndex(){
-        String msg = "ABRACADABRA";
+        String msg = "ABRACA DABRA";
         System.out.println(msg.charAt(6));
         System.out.println(msg.indexOf('Z'));
         System.out.println(msg.toCharArray());
@@ -23,7 +23,7 @@ class CipherTest {
     }
     @Test
     public void testMod(){                               //testing out of range problem and solution using modulus
-         String testmsg = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+         String testmsg = "ABCDEFGHIJKLMNO PQRSTUVWXYZ";
          int shift = 2;
          System.out.println(testmsg.toUpperCase().indexOf('Z'));
          int newPos = (testmsg.toUpperCase().indexOf('Z')) + shift;
@@ -33,6 +33,16 @@ class CipherTest {
         System.out.println(newPos2);
 
 
+
+    }
+
+    @Test void addSpace(){
+        String msg1 = "Your dog is foolish";
+        String msg2 = "You look like your dog";
+
+        String output = msg1 + msg2;
+
+        System.out.println(output);
 
     }
 
