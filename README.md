@@ -37,8 +37,9 @@ To us the program, follow the steps below.
 
 - git clone https://github.com/deusnyakundi/Caesar-Cipher-Wk01.git
 - Open and extract the cloned folder
-- Run 
+- Run
 
+  https://deusnyakundi.github.io/Caesar-Cipher-Wk01/
 
 ## License & Copyright Info
 
