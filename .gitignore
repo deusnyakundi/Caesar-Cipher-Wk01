@@ -11,7 +11,7 @@ gradle-app.setting
 !**/src/test/**/build/
 
 ### IntelliJ IDEA ###
-.idea/
+
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -23,6 +23,26 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+
+########################################################################
+#### except
+
+# Version Control configuration for your project
+!vcs.xml
+
+# how IDEA should treat the text files in your project
+!encodings.xml
+
+# automatic code formatting
+!codeStyleSettings.xml
+
+# project specific words
+!dictionaries
+
+!copyrights
+!misc.xml
+!sqldialects.xml
+###########################################################################
 ### Eclipse ###
 .apt_generated
 .classpath
